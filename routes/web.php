@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login');
 });
+
+Route::get('reuniao/novo', 'App\Http\Controllers\ReuniaoController@create');
