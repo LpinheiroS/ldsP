@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reuniao extends Model
 {
-    use HasFactory;
+    protected $fillable = ['nome', 'data', 'descricao'];
+  //  use HasFactory;
 }
