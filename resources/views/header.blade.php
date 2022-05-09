@@ -10,7 +10,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reuniões</a>
+            <a class="nav-link" href="/reuniao/novo">Reuniões</a>
           </li>
           <li class="nav-item">
             <a class="nav-link ">Atas</a>

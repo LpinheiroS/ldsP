@@ -21,6 +21,12 @@ class ReuniaoController extends Controller
             'descricao' => $request->descricao
         ]);
 
-        return "Reunião criada com sucesso!";
+        return view('reuniao.reuniao');
+    }
+
+    public function index(){
+        //Mostra uma lista de reuniões
+        $reuniao = Reuniao::all();
+        return view('index', compact('reuniao'));
     }
 }

@@ -23,21 +23,7 @@
         </form>
         </div>
 
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Data</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-
-              </tr>
-
-            </tbody>
-          </table>
+        
 
     </div>
 </div>

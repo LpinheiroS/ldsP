@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 Route::get('reuniao/novo', 'App\Http\Controllers\ReuniaoController@create');
 Route::post('reuniao/novo', 'App\Http\Controllers\ReuniaoController@store')->name('registrar_reuniao');
+
+
