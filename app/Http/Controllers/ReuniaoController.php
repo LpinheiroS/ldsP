@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Storage;
 
 namespace App\Http\Controllers;
 
@@ -14,12 +15,26 @@ class ReuniaoController extends Controller
 
     public function store(Request $request){
 
+      //  dd($request->file('arquivo')->isValid());
+        //dd($request->arquivo->extension());
+
 
         Reuniao::create([
             'nome' => $request->nome,
             'data' => $request->data,
             'descricao' => $request->descricao
         ]);
+
+        if($request->hasFile('arquivo')){
+            if($request->file('arquivo')->isValid()){
+                $upload = $request->arquivo->store('arq');
+
+           // echo asset()   ; 
+            
+            return Storage::download('arquivo');
+
+            }
+        }
 
         return view('reuniao.reuniao');
     }
